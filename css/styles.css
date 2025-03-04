@@ -10,8 +10,8 @@
     --BTT-ACTIVE-COLOR: #010409;
     --BTT-HOVER-COLOR: #474751;
     --BUTTON-ACTIVE-COLOR: #623f2a;
-    --BUTTON-COLOR: #976f53;
-    --BUTTON-HOVER-COLOR: #b08367;
+    --BUTTON-COLOR: #623f2a;
+    --BUTTON-HOVER-COLOR: #976f53;
     --CARD-BGCOLOR: #f9dfca;
     --ITEM-BGCOLOR: #976f53;
     --FONT-COLOR: #010409;
@@ -91,7 +91,9 @@ button {
 }
 
 button:hover,
-button:focus-visible {
+button:focus-visible,
+input[type=submit]:hover,
+input[type=submit]:focus-visible {
     background-color: var(--BUTTON-HOVER-COLOR);
     transition: 0.2s;
 }
